@@ -1,4 +1,6 @@
-extends extends/_default.pug
+extends base/_default.pug
 
-block content 
+block content
+    include sections/_nav.pug
     h1 hello world
+    include sections/_footer.pug
