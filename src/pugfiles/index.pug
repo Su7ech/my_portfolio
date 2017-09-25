@@ -1,6 +1,8 @@
 extends base/_default.pug
-
+block styles
+  link(href="./css/main.css", rel="stylesheet")
 block content 
-  include includes/_nav.pug
+  .container 
+    include includes/_nav.pug
 block append scripts
   script(src="./js/main.js")
